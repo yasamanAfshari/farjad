@@ -833,36 +833,7 @@
     <script src="Script/persian-datepicker.js"></script>
     <script src="Script/persian-date.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".date").pDatepicker({
-                initialValue: true,
-                observer: true,
-                format: 'YYYY/MM/DD',
-                altField: '.observer-example-alt'
-            });
-
-
-        });
-
-
-
-        //datepicker without txt 
-
-        $(document).ready(function () {
-            $(".date-none-txt").pDatepicker({
-                initialValue: false,
-                observer: true,
-                format: 'YYYY/MM/DD',
-                altField: '.observer-example-alt'
-            });
-
-
-        });
-
-
-
-    </script>
+   
     <script>
         $('.sub-menu ul').hide();
         $(".sub-menu a").click(function () {
@@ -871,7 +842,7 @@
 
         });
     </script>
-    <script src="script/change-number.js"></script>
+    
     <script>
 
 
@@ -880,7 +851,8 @@
                 initialValue: true,
                 observer: true,
                 format: 'YYYY/MM/DD',
-                altField: '.observer-example-alt'
+                altField: '.observer-example-alt',
+                Response:true
 
             })
           
@@ -892,7 +864,7 @@
         $("#pdpSmall").persianDatepicker({
         cellWidth: 14,
         cellHeight: 12,
-        fontSize: 8,
+        fontSize: 8
     });
 
         // //datepicker without txt 
@@ -907,7 +879,7 @@
 
 
     </script>
-
+<script src="script/change-number.js"></script>
 
 </body>
 
