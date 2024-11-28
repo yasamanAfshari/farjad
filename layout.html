@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font/fontawesome.css">
+    <link rel="stylesheet" href="css/font/brands.css">
+    <link rel="stylesheet" href="css/font/regular.css">
+    <link rel="stylesheet" href="css/font/solid.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+    <header>
+        <div class="row w-100">
+            <div class="col-1 ">
+                <div class="d-flex align-items-center justify-content-center offcanvas-wrapper p-2 m-2">
+                    <div class="d-inline d-md-none ">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </a>
+    
+    
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+    
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+    
+                            <!-- sidebar menue in mobile -->
+                            <div class="offcanvas-body">
+                                <div class="sidebar-wrapper">
+                                    <nav class="animated bounceInDown">
+                
+                                        <ul>
+                                            <li>
+                                                <a href="dashboard.html">
+                
+                
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="26"
+                                                        height="26" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                                                    </svg>
+                
+                                                    <div class="d-lg-flex d-md-none d-block">داشبورد</div>
+                
+                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                        </path>
+                                                    </svg>
+                                                    <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                </a>
+                                            </li>
+                
+                
+                
+                                            <li class="sub-menu">
+                
+                                                <a href="#">
+                                                    <div>
+                
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                                            viewBox="0 0 24 24" fill="currentColor">
+                                                            <path
+                                                                d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.719 9.719 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.219 8.219 0 0 1 5.85 3.5ZM19.267 2.5a.75.75 0 1 0-1.118 1 8.22 8.22 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248A9.72 9.72 0 0 0 19.266 2.5Z">
+                                                            </path>
+                                                            <path fill-rule="evenodd"
+                                                                d="M12 2.25A6.75 6.75 0 0 0 5.25 9v.75a8.217 8.217 0 0 1-2.119 5.52.75.75 0 0 0 .298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 1 0 7.48 0 24.583 24.583 0 0 0 4.83-1.244.75.75 0 0 0 .298-1.205 8.217 8.217 0 0 1-2.118-5.52V9A6.75 6.75 0 0 0 12 2.25ZM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 0 0 4.496 0l.002.1a2.25 2.25 0 1 1-4.5 0Z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg>
+                
+                                                    </div>
+                                                    <div class="d-lg-flex d-md-none d-block">یادآوری</div>
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="currentColor">
+                                                        <path fill-rule="evenodd"
+                                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    </div>
+                
+                
+                                                </a>
+                
+                                                <ul class="ps-3 " style="display: none;">
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                        </a>
+                                                    </li>
+                
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                
+                
+                                            
+                                            <li class="sub-menu">
+                
+                                                <a href="#">
+                                                    <div>
+                                                      
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                                            viewBox="0 0 24 24" fill="currentColor">
+                                                            <path
+                                                                d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.719 9.719 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.219 8.219 0 0 1 5.85 3.5ZM19.267 2.5a.75.75 0 1 0-1.118 1 8.22 8.22 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248A9.72 9.72 0 0 0 19.266 2.5Z">
+                                                            </path>
+                                                            <path fill-rule="evenodd"
+                                                                d="M12 2.25A6.75 6.75 0 0 0 5.25 9v.75a8.217 8.217 0 0 1-2.119 5.52.75.75 0 0 0 .298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 1 0 7.48 0 24.583 24.583 0 0 0 4.83-1.244.75.75 0 0 0 .298-1.205 8.217 8.217 0 0 1-2.118-5.52V9A6.75 6.75 0 0 0 12 2.25ZM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 0 0 4.496 0l.002.1a2.25 2.25 0 1 1-4.5 0Z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg>
+                
+                                                    </div>
+                                                    <div class="d-lg-flex d-md-none d-block">یادآوری</div>
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        viewBox="0 0 24 24" fill="currentColor">
+                                                        <path fill-rule="evenodd"
+                                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    </div>
+                
+                
+                                                </a>
+                
+                                                <ul class="ps-3 " style="display: none;">
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                        </a>
+                                                    </li>
+                
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                
+                
+                                            <li>
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                        </path>
+                                                    </svg>
+                                                    <div class="d-lg-flex d-md-none d-block"> تست</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                
+                                    </nav>
+                
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+            <div class="col-11">
+                <div class="glass-header mt-2 mb-2 d-flex align-items-center p-2">
+                    <div class="profile d-flex">
+                        <img src="image/woman.jpg" alt="profile">
+                        <div class=" d-flex align-items-center m-2" dir="rtl">
+                            <div class="dropdown d-flex align-items-center" dir="rtl">
+                                <a class="dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    یاسمن افشاری
+                                </a>
+
+                                <!-- <ul class="dropdown-menu w-50">
+                                    
+
+                                    <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                    <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <section>
+        <div class="row w-100">
+
+            <!-- ///sidebar -->
+            <div class="col-1">
+                <div class="sidebar-wrapper ms-3 d-md-inline d-none">
+                    <nav class="animated bounceInDown">
+
+                        <ul>
+                            <li>
+                                <a href="dashboard.html">
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="26"
+                                        height="26" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                                    </svg>
+
+                                    <div class="d-lg-flex d-none">داشبورد</div>
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                        </path>
+                                    </svg>
+                                    <div class="d-lg-flex d-none"> تست</div>
+                                </a>
+                            </li>
+
+
+
+                            <li class="sub-menu">
+
+                                <a href="#">
+                                    <div>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.719 9.719 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.219 8.219 0 0 1 5.85 3.5ZM19.267 2.5a.75.75 0 1 0-1.118 1 8.22 8.22 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248A9.72 9.72 0 0 0 19.266 2.5Z">
+                                            </path>
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25A6.75 6.75 0 0 0 5.25 9v.75a8.217 8.217 0 0 1-2.119 5.52.75.75 0 0 0 .298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 1 0 7.48 0 24.583 24.583 0 0 0 4.83-1.244.75.75 0 0 0 .298-1.205 8.217 8.217 0 0 1-2.118-5.52V9A6.75 6.75 0 0 0 12 2.25ZM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 0 0 4.496 0l.002.1a2.25 2.25 0 1 1-4.5 0Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class="d-lg-flex d-none">یادآوری</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    </div>
+
+
+                                </a>
+
+                                <ul class="ps-3 " style="display: none;">
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                </path>
+                                            </svg>
+                                            <div class="d-lg-flex d-none"> تست</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                </path>
+                                            </svg>
+                                            <div class="d-lg-flex d-none"> تست</div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                </path>
+                                            </svg>
+                                            <div class="d-lg-flex d-none"> تست</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            
+                            <li class="sub-menu">
+
+                                <a href="#">
+                                    <div>
+                                      
+
+
+
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.719 9.719 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.219 8.219 0 0 1 5.85 3.5ZM19.267 2.5a.75.75 0 1 0-1.118 1 8.22 8.22 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248A9.72 9.72 0 0 0 19.266 2.5Z">
+                                            </path>
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25A6.75 6.75 0 0 0 5.25 9v.75a8.217 8.217 0 0 1-2.119 5.52.75.75 0 0 0 .298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 1 0 7.48 0 24.583 24.583 0 0 0 4.83-1.244.75.75 0 0 0 .298-1.205 8.217 8.217 0 0 1-2.118-5.52V9A6.75 6.75 0 0 0 12 2.25ZM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 0 0 4.496 0l.002.1a2.25 2.25 0 1 1-4.5 0Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+
+                                    </div>
+                                    <div class="d-lg-flex d-none">یادآوری</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    </div>
+
+
+                                </a>
+
+                                <ul class="ps-3 " style="display: none;">
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                </path>
+                                            </svg>
+                                            <div class="d-lg-flex d-none"> تست</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                </path>
+                                            </svg>
+                                            <div class="d-lg-flex d-none"> تست</div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                                </path>
+                                            </svg>
+                                            <div class="d-lg-flex d-none"> تست</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z">
+                                        </path>
+                                    </svg>
+                                    <div class="d-lg-flex d-none"> تست</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- ///main Content -->
+            <div class="col-11">
+                <div class="row w-100">
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-11">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="Script/persian-datepicker.js"></script>
+    <script src="Script/persian-date.min.js"></script>
+
+
+    <script>
+        $('.sub-menu ul').hide();
+        $(".sub-menu a").click(function () {
+            $(this).parent(".sub-menu").children("ul").slideToggle("100");
+            $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+
+        });
+    </script>
+</body>
+
+</html>

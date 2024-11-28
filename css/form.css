@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("font/WebFonts/fonts/woff/IRANSansWeb.woff") format('woff');
+}
+@font-face {
+    font-family: "IRANSansweb";
+    src: url("font/WebFonts/IRANSans.html");
+}
+@font-face{
+    font-family: "number";
+    src: url(font/WebFonts/fonts/woff/IRANSansXFaNum-Regular.woff) format('woff');
+}
+
+
+* {
+    /* color: var(--text-color); */
+    text-align: right;
+    font-family: "IRANSans" ;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(251, 194, 235, 0.4) 0%, rgba(120, 163, 235, 0.42) 100%);
+}
+
+.glass-box {
+    border: 2px SOLID rgba(255, 255, 255, 0.452);
+    min-height: 600px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(190deg, rgb(255 255 255 / 26%) 0%, rgba(255, 255, 255, 0.25) 100%);
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 12px -4px rgba(134, 134, 134, 0.25);
+}
+
+.step-container{
+    min-height: 60px;
+}
+.step-wrapper{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.step-status{
+    background-color: #a8caf957;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+}
+.active{
+    background-color: #a8caf9 !important;
+}
+.line::before{
+    content: "";
+    display: block;
+    height: 45px;
+    background-color: black;
+    width: 3px;
+    position: absolute;
+    right: 26%;
+}
+.title{
+    font-weight: bold;
+}
+
+.input-box{
+    width: 100%;
+}@media screen and (max-width: 1200px) {
+    .input-box{
+        width: 94%;
+    }
+}
+@media screen and (max-width: 572px) {
+    .input-box{
+        width: 85%;
+    }
+}
+
+.form-control{
+    background-color:rgb(255 255 255 / 61%);
+    /* box-shadow: inset 0px 0px 6px -1px rgba(56,56,56,0.20); */
+    border: none;
+} 
+
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow:  0px 0px 4px -1px rgba(56,56,56,0.20);
+    border: none;
+    outline: none;
+}
+.form-control:active{
+    outline: none;
+}
+.required{
+    color: #C20000;
+}
+.project-info, .performance, .sum-price{
+    border-bottom: 3px solid white;
+}
+.add-btn{
+    background-color: #a8caf9;  
+    color: black;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 9px;
+}
+.main-btn{
+    background-color: #a8caf9;  
+    color: black;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 9px;
+    width: 90px;
+}
+input[type="checkbox"]{
+    transform: scale(1.4);
+    margin: 5px;
+    accent-color: #a8caf9;
+}
+
+input[type="checkbox"]:hover{
+    accent-color: #a8caf9;
+}
+input[readonly]{
+    background-color: rgba(255, 255, 255, 0.226);
+    box-shadow: 0px 0px 4px -1px rgba(56, 56, 56, 0.20);
+    border: none;
+    outline: none;
+}
+input[type="number"]{
+    font-family: "IRANSansweb" , "number";
+    font-size: 12px;
+}
+#numberText{
+    font-size: 11px;
+}
