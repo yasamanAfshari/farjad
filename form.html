@@ -876,27 +876,34 @@
 
 
         $(document).ready(function () {
-            $(".date").pDatepicker({
+            $(".date").persianDatepicker({
                 initialValue: true,
                 observer: true,
                 format: 'YYYY/MM/DD',
                 altField: '.observer-example-alt'
-            });
+
+            })
+          
 
 
         });
 
 
+        $("#pdpSmall").persianDatepicker({
+        cellWidth: 14,
+        cellHeight: 12,
+        fontSize: 8,
+    });
 
-        //datepicker without txt 
+        // //datepicker without txt 
 
-        $(document).ready(function () {
-            $(".date-none-txt").pDatepicker({
-                initialValue: false,
-                observer: true,
-                format: 'YYYY/MM/DD',
-                altField: '.observer-example-alt'
-            });
+        // $(document).ready(function () {
+        //     $(".date-none-txt").pDatepicker({
+        //         initialValue: false,
+        //         observer: true,
+        //         format: 'YYYY/MM/DD',
+        //         altField: '.observer-example-alt'
+        //     });
 
 
     </script>
