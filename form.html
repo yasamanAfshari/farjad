@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font/fontawesome.css">
     <link rel="stylesheet" href="css/font/brands.css">
     <link rel="stylesheet" href="css/font/regular.css">
@@ -833,7 +832,7 @@
     <script src="Script/persian-datepicker.js"></script>
     <script src="Script/persian-date.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
-   
+
     <script>
         $('.sub-menu ul').hide();
         $(".sub-menu a").click(function () {
@@ -842,7 +841,9 @@
 
         });
     </script>
-    
+
+
+    <script src="script/change-number.js"></script>
     <script>
 
 
@@ -879,7 +880,38 @@
 
 
     </script>
-<script src="script/change-number.js"></script>
+    <script>
+        const offcanvasElementList = document.querySelectorAll('.offcanvas')
+        const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
+
+
+        $(document).ready(function () {
+            $(".date").pDatepicker({
+                initialValue: true,
+                observer: true,
+                format: 'YYYY/MM/DD',
+                altField: '.observer-example-alt'
+            });
+
+
+        });
+
+
+
+        //datepicker without txt 
+
+        $(document).ready(function () {
+            $(".date-none-txt").pDatepicker({
+                initialValue: false,
+                observer: true,
+                format: 'YYYY/MM/DD',
+                altField: '.observer-example-alt'
+            });
+
+
+        });
+
+    </script>
 
 </body>
 
