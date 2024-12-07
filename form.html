@@ -598,7 +598,7 @@
                                             <label for="" class="ms-3">تاریخ اجرا</label>
 
                                             <input type="text" class="form-control text-center ms-0 date-none-txt pwt-datepicker-input-element 
-                                                   ">
+                                                   " id="pdpSmall">
 
                                         </div>
                                     </div>
@@ -847,11 +847,7 @@
     <script src="script/change-number.js"></script>
 
     <script>
-        $("#pdpSmall").persianDatepicker({
-            cellWidth: 14,
-            cellHeight: 12,
-            fontSize: 8
-        });   
+      
 
     </script>
 
@@ -860,17 +856,6 @@
     const offcanvasElementList = document.querySelectorAll('.offcanvas')
     const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
 
-
-    $(document).ready(function () {
-        $(".date").pDatepicker({
-            initialValue: true,
-            observer: true,
-            format: 'YYYY/MM/DD',
-            altField: '.observer-example-alt'
-        });
-
-
-    });
 
 
 
@@ -886,7 +871,11 @@
 
 
     });
-
+    $("#pdpSmall").persianDatepicker({
+            cellWidth: 14,
+            cellHeight: 12,
+            fontSize: 8
+        });   
 
 
 </script>
