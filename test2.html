@@ -15,16 +15,12 @@
        
 .form-control {
     font-size: 14px;
+    background-color: var(--main-background);
+    border: 1px solid var(--stroke);
 }
 
-.profile-input{
-    height: 45px !important;
-    color: var(--icon);
-}
 
-.small-input .form-floating{
-    width: 165px;
-}
+
 .form-control:focus {
     color: var(--bs-body-color);
     background-color: var(--background);
@@ -33,81 +29,6 @@
     box-shadow: none;
 }
 
-.btn-register {
-    height: 35px;
-    background-color: var(--main-color);
-    border: none;
-    border-radius: 7px;
-    color: var(--txt);
-    width: 120px;
-}
-
-
-
-
-
-
-
-.form-control{
-    background-color: var(--main-background);
-    border: 1px solid var(--stroke);
-}
-.select-label{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0px;
-    right: 10px;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1rem 0.75rem;
-    overflow: hidden;
-    text-align: start;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    pointer-events: none;
-    border: var(--bs-border-width) solid transparent;
-}
-.select-style{
-    color: var(--icon);
-    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
-
-}
-.select-style select{
-    height: 45px;
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-}
-a.sort-by {
-    padding-right: 18px;
-    position: relative;
-}
-
-a.sort-by:before,
-a.sort-by:after {
-    border: 4px solid transparent;
-    content: "";
-    display: block;
-    height: 0;
-    right: 5px;
-    top: 50%;
-    position: absolute;
-    width: 0;
-}
-
-a.sort-by:before {
-    border-bottom-color: #666;
-    margin-top: -9px;
-}
-
-a.sort-by:after {
-    border-top-color: #666;
-    margin-top: 1px;
-}
 input[placeholder-shown],
 [placeholder] {
     color: var(--icon) !important;
@@ -148,7 +69,7 @@ input::placeholder {
     <div class="">
 
         <input type="text"
-            class=" text-center ms-0 date-none-txt pwt-datepicker-input-element"
+            class="form-control text-center ms-0 date-none-txt pwt-datepicker-input-element"
          placeholder="تاریخ ">
       
     </div>
