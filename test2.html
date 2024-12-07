@@ -19,42 +19,11 @@
     font-size: 14px;
 }
 
-.form-floating>label {
-    display: flex;
-    align-items: center;
-    top: 0px;
-    right: 10px;
-    padding: 0;
-}
-
-.form-floating>.form-control,
-.form-floating>.form-control-plaintext {
-    padding: 7px;
-}
-
-.form-floating>.form-control,
-.form-floating>.form-control-plaintext,
-.form-floating>.form-select {
-    height: 35px;
-
-
-}
-
-.form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
-    padding-top: 0;
-    padding-bottom: 0;
-}
 .profile-input{
     height: 45px !important;
     color: var(--icon);
 }
 
-.form-floating {
-    color: var(--icon);
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
-}
 .small-input .form-floating{
     width: 165px;
 }
@@ -170,21 +139,17 @@ input::placeholder {
     .btn-register{
         width: 70px;
     }
-    .form-floating{
-        width: 75%;
-    }
+  
 }
 @media (max-width: 400px){
-.form-floating {
-    width: 100%;
-}
+
 }
     </style>
 
 </head>
 
 <body>
-    <div class="form-floating">
+    <div class="">
 
         <input type="text"
             class="form-control text-center ms-0 date-none-txt pwt-datepicker-input-element"
