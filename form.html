@@ -582,7 +582,7 @@
                                     <div
                                         class="col-lg-2 col-sm-3 col-12 mt-3 d-lg-inline d-flex flex-column align-items-center">
 
-
+                                        
                                         <div class="input-box">
                                             <label for="" class="ms-3">تاریخ ثبت</label>
                                             <input type="text"
@@ -829,8 +829,9 @@
 
     <script src="script/jquery-3.6.1.min.js"></script>
     <script src="script/bootstrap.bundle.min.js"></script>
-    <script src="Script/persian-datepicker.js"></script>
-    <script src="Script/persian-date.min.js"></script>
+
+    <script src="script/persian-datepicker.js"></script>
+    <script src="script/persian-date.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 
     <script>
@@ -846,44 +847,49 @@
     <script src="script/change-number.js"></script>
 
     <script>
-        const offcanvasElementList = document.querySelectorAll('.offcanvas')
-        const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
-
-
-
         $("#pdpSmall").persianDatepicker({
             cellWidth: 14,
             cellHeight: 12,
             fontSize: 8
-        });
-
-        // $(document).ready(function () {
-        //     $(".date").pDatepicker({
-        //         initialValue: true,
-        //         observer: true,
-        //         format: 'YYYY/MM/DD',
-        //         altField: '.observer-example-alt'
-        //     });
-
-
-        // });
-
-
-
-        //datepicker without txt 
-
-        $(document).ready(function () {
-            $(".date-none-txt").pDatepicker({
-                initialValue: false,
-                observer: true,
-                format: 'YYYY/MM/DD',
-                altField: '.observer-example-alt'
-            });
-
-
-        });
+        });   
 
     </script>
+
+
+<script>
+    const offcanvasElementList = document.querySelectorAll('.offcanvas')
+    const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
+
+
+    $(document).ready(function () {
+        $(".date").pDatepicker({
+            initialValue: true,
+            observer: true,
+            format: 'YYYY/MM/DD',
+            altField: '.observer-example-alt'
+        });
+
+
+    });
+
+
+
+    //datepicker without txt 
+
+    $(document).ready(function () {
+        $(".date-none-txt").pDatepicker({
+            initialValue: false,
+            observer: true,
+            format: 'YYYY/MM/DD',
+            altField: '.observer-example-alt'
+        });
+
+
+    });
+
+
+
+</script>
 
 </body>
 
